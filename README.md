@@ -16,3 +16,6 @@ To run just type: `node filename.js` in the command line.
 - String Play (String manipulation)
 - Love coding (Another string manipulation)
 - Gatcha (5 word randomizer)
+
+## Week 1 Day 4
+- Asterisk Looping to make patterns
