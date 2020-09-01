@@ -1,7 +1,8 @@
 # hacktiv8
  Personal repo during Hacktiv8 bootcamp
 
-### Phase 0
+To run just type `node *filename.js*`
+# Phase 0
 ## Week 1 Day 2
 - Calculate Circumference
 - Newton 2nd Law
