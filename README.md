@@ -1,7 +1,7 @@
 # hacktiv8
  Personal repo during Hacktiv8 bootcamp
 
-To run just type `node *filename.js*`
+To run just type: `node filename.js` in the command line.
 # Phase 0
 ## Week 1 Day 2
 - Calculate Circumference
