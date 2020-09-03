@@ -15,9 +15,9 @@ My take on [Project Euler](https://projecteuler.net/) using Javascript.
 # Buddy Daniel Challenge
 Some training materials aside from ⚓ Anchor + 🚀Rocket [available here](https://github.com/ideaspaper/h8-student-challenges)
 
-- Discount
-- EatNotEat
-- Pattern 1
+- Discount ✔️
+- EatNotEat ✔️
+- Pattern 1 ✔️
 
 # Phase 0
 ## Week 1 Day 2
