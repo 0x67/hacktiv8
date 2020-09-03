@@ -35,8 +35,8 @@ for (var i = 0; i < str.length - 1; i++) {  // 'i' must start at '0' because fir
         END LOOP
 
      TODO: convert the result of each iteration of pecahan to number
-     TODO: sum all the pecahan iteration and store it in variable 'output'
-     TODO: display the total sum
+     TODO: compare each number to find the larger number
+     TODO: display the largest number
      easier type than code lol
     */
     angkaPisah = parseInt(pecahan)
