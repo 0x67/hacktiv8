@@ -17,7 +17,14 @@ Some training materials aside from ⚓ Anchor + 🚀Rocket [available here](http
 
 - Discount ✔️
 - EatNotEat ✔️
+- Accept EULA ⏳
+- First Middle Last ⏳
+- Humanize Date Format ⏳
 - Pattern 1 ✔️
+- Pattern 2 ⏳
+- Pattern 3 ⏳
+- Pattern 4 ⏳
+- Pattern 5 ⏳
 
 # Phase 0
 ## Week 1 Day 2
