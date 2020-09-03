@@ -4,7 +4,7 @@ var kata = 'i love javascript'
 maka output yang dihasilkan adalah '$ l$v$ j$v$scr$pt'
 */
 
-let kata = 'abiiiiiee'
+let kata = 'aiueo IS VOCAL'
 // let vokal = ['a', 'i','u','e','o'] //idk how to use array so i comment this
 let output = ''
 
@@ -12,7 +12,7 @@ let output = ''
 for (var i = 0; i <= kata.length; i++) {
     // output += kata[i] // iterates output with value of kata >> if kata[0] >> output = a
     var outputVokal = ''
-    if (kata[i] == 'a' || kata[i] == 'i') {  // if output equal to 'vokal'
+    if (kata[i] == 'a' || kata[i] == 'i' || kata[i] == 'u' || kata[i] == 'e' || kata[i] == 'o') {  // if output equal to 'vokal'
         //output = ganti
         outputVokal = '$'
         output += outputVokal   // change to ganti in the output[length] 
