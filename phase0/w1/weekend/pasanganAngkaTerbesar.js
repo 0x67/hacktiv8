@@ -17,7 +17,6 @@ penjelasan:
 Maka 92 adalah pasangan dua digit angka yang paling besar diantara yang lainnya.
 */
 
-
 let angka = 12783456   
 //console.log(typeof angka)
 
