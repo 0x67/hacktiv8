@@ -23,5 +23,8 @@ for (var i = angka; i >= angka; i++) {
         break               // stop the loop
     }
     
+    
 }
-console.log(balik + ' ini balik')
+angka = parseInt(balik) // if output require number 
+console.log(parseInt(angka) + ' ini balik') // if output accept 'string' as number then just change >> balik
+console.log(typeof angka);
