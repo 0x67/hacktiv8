@@ -9,7 +9,9 @@ To run just type: `node filename.js` in the command line.
 
 Some folder might have `test.js` file, don't worry about those one. It's just prototype for the actual code that I wrote it separate file.
 
-Why updating separate file? Just because so I have backup, in case something went south and my working pattern is `today = todayAssignment(if any) + tomorrowAssignment` mainly just so I have free weekend to play game 🤣
+Why updating separate file? Just because so I have backup, in case something went south, plus my working pattern is `today = todayAssignment(if any) + tomorrowAssignment`.
+Nah, not really tho, it's mainly just so I have free weekend to play game 🤣
+
 # Euler.js
 My take on [Project Euler](https://projecteuler.net/) using Javascript.
 # Buddy Daniel Challenge
