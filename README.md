@@ -72,6 +72,6 @@ Some training materials aside from ⚓ Anchor + 🚀Rocket [available here](http
 
 ## Week 1 Weekend
 
-⚓ Pasangan Angka Terbesar ⏳
+⚓ Pasangan Angka Terbesar ✔️
 
-⚓ Ubah Huruf ⏳
+⚓ Ubah Huruf ✔️
