@@ -62,3 +62,9 @@ Some training materials aside from ⚓ Anchor + 🚀Rocket [available here](http
 ⚓ Palindrome ✔️
 
 ⚓ Palindrome Angka ✔️
+
+## Week 1 Weekend
+
+⚓ Pasangan Angka Terbesar ⏳
+
+⚓ Ubah Huruf ⏳
