@@ -15,7 +15,6 @@ for (var i = 0; i <= kata.length; i++) {
     var outputVokal = '$'
     if (kata[i] == 'a'.toUpperCase() || kata[i] == 'i'.toUpperCase() || kata[i] == 'u'.toUpperCase() || kata[i] == 'e'.toUpperCase() || kata[i] == 'o'.toUpperCase()) {  // if output equal to 'vokal'
         //output = ganti
-
         output += outputVokal   // change  to ganti in the output[length] 
         //output += kata[i+1]
         //add non vokal character from 'kata' to 'output'
