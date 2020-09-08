@@ -1,9 +1,13 @@
 var data = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-var dataLength = data.length    // for some reason i can't use array.length as end-condition for 'i'
+var dataLength = data.length    // for unknown reason sometimes i can't use array.length as end-condition for 'i'
 var output = [];                // so i just store the length as global variable
 
 function slice(data, start, end) {
-    if (start > 0 && !end) { // if start is defined but end is not
+    if (start > data.length) {
+        let output = []
+        return output
+    }
+    else if (start > 0 && !end) { // if start is defined but end is not
         for (var i = start; i < dataLength; i++) {
             output.push(data[i])
             continue
@@ -35,4 +39,4 @@ console.log(slice(['ant', 'bison', 'camel', 'duck', 'elephant'], 2)); // [ 'came
 console.log(slice(['ant', 'bison', 'camel', 'duck', 'elephant'], 2, 4)); // [ 'camel', 'duck' ]
 console.log(slice(['ant', 'bison', 'camel', 'duck', 'elephant'], 1, 5)); // [ 'bison', 'camel', 'duck', 'elephant' ]
 console.log(slice(['ant', 'bison', 'camel', 'duck', 'elephant'])); //[ 'ant', 'bison', 'camel', 'duck', 'elephant' ]
-//console.log(slice(['ant', 'bison', 'camel', 'duck', 'elephant'], 20)); //[]
+console.log(slice(['ant', 'bison', 'camel', 'duck', 'elephant'], 20)); //[]
