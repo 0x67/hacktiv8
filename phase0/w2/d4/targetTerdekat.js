@@ -1,32 +1,37 @@
 function targetTerdekat(arr) {
-    let xIndex = 0
-    let oIndex = 0
-    let arrSplit = []
+  let xIndex = 0
+  let oIndex = 0
+  let foundX = false
+  let foundO = false
+  let jarak = 0
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === 'o') {
-            oIndex = i
-        } else if (arr[i] === 'x') {
-            xIndex = i
-            break
-        }
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] === 'o') {
+      oIndex = i
+      foundO = true
     }
-
-    for (let j = oIndex; j <= xIndex; j++) { // split the arr from oIndex to xIndex
-        arrSplit.push(arr[j])
+    else if (arr[i] === 'x') {
+      xIndex = i
+      foundX = true
     }
-
-    //let jarak = arrSplit.length - 1
-    let jarak = xIndex - oIndex
-    //console.log(oIndex)
-    //console.log(xIndex)
-    //console.log(arrSplit)
-    return `Jarak terdekat antara 'X' dan 'O': ${jarak}`
+    if (foundO === true && foundX === true && oIndex < xIndex) {
+      jarak = xIndex - oIndex
+      break
+    }
+    else if (foundO === true && foundX === true && xIndex < oIndex) {
+      jarak = oIndex - xIndex
+      break
+    }
   }
-  
-  // TEST CASES
-  console.log(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])); // 3
-  console.log(targetTerdekat(['o', ' ', ' ', ' ', 'x', 'x', 'x'])); // 4
-  //console.log(targetTerdekat(['x', ' ', ' ', ' ', 'x', 'x', 'o', ' '])); // 1
-  //console.log(targetTerdekat([' ', ' ', 'o', ' '])); // 0
-  //console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', ' ', ' ', 'x'])); // 2
+
+  return jarak
+}
+
+console.log(targetTerdekat([' ', ' ', 'o', ' ', ' ', 'x', ' ', 'x'])) // 3
+console.log(targetTerdekat(['o', ' ', ' ', ' ', 'x', 'x', 'x'])) // 4
+console.log(targetTerdekat(['x', ' ', ' ', ' ', 'x', 'o', ' ', 'x'])) // 1
+console.log(targetTerdekat(['x', ' ', ' ', ' ', 'x', 'x', 'o', ' '])); // 1
+console.log(targetTerdekat([' ', ' ', 'o', ' '])) // 0
+console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', ' ', ' ', 'x'])) // 2
+
+module.exports = targetTerdekat
