@@ -39,7 +39,7 @@ var email = 'ichaha@hacktiv8.com'
 
 // console.log(provider);
 
-var email = '@hacktiv8.c....o.id'
+var email = 'asdasdad@hacktiv8.c....o.id'
 
 let indexAt = 0; // 6
 let indexTitik = 0; // 15

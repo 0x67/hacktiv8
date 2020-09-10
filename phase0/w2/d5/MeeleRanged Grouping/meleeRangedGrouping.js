@@ -44,9 +44,9 @@ function meleeRangedGrouping(str) {
 // TEST CASE
 
 console.log(meleeRangedGrouping('Razor-Ranged,Invoker-Ranged,Meepo-Melee,Axe-Melee,Sniper-Ranged'));
-// [ ['Razor', 'Invoker', 'Sniper'], ['Meepo', 'Axe'] ]
+// [ ['Razor', 'Invoker', 'Sniper'], ['Meepo', 'Axe'] ] ==> btw it's ThrowOrMeepo xD
 
 console.log(meleeRangedGrouping('Drow Ranger-Ranged,Chen-Ranged,Dazzle-Ranged,Io-Ranged'));
-// [ ['Drow Ranger', 'Chen', 'Dazzle', 'Io'], [] ]
+// [ ['Drow Ranger', 'Chen', 'Dazzle', 'Io'], [] ] ==> and Io makes betting easier whenever OG is playing
 
  console.log(meleeRangedGrouping('')); // []
