@@ -1,6 +1,5 @@
 function sorting(arrNumber) {
   var done = false;
-  var largestNum = 0
   while (!done) {
     done = true;
     for (var i = 1; i < arrNumber.length; i += 1) {
@@ -15,8 +14,8 @@ function sorting(arrNumber) {
       }
     }
   }
-  console.log(largestNum)
-  return largestNum;
+  //return largestNum // ==> either this or the one below
+  return arrNumber;
 }
 
 function getTotal(arrNumber) {
@@ -33,6 +32,7 @@ function getTotal(arrNumber) {
       count += 1
     }
   }
+  
   return count
 }
 
@@ -41,11 +41,10 @@ function mostFrequentLargestNumbers(arrNumber) {
     return `` // kosong 
   } else {
     var listSort = sorting(arrNumber);
-    var countHighest = getTotal(listSort);
+    var countHighest = getTotal(arrNumber); // ntah kenapa kalo misal paramater diganti ke => listSort hasil jadi 0
 
-    return `angka paling besar adalah ${countHighest} dan jumlah kemunculan sebanyak ${listSort} kali`;
+    return `angka paling besar adalah ${listSort} dan jumlah kemunculan sebanyak ${countHighest} kali`;
   }
-
 }
 
 console.log(mostFrequentLargestNumbers([2, 8, 4, 6, 8, 5, 8, 4]));
@@ -58,4 +57,10 @@ console.log(mostFrequentLargestNumbers([1, 1, 1, 1]));
 // //'angka paling besar adalah 1 dan jumlah kemunculan sebanyak 4 kali'
 
 console.log(mostFrequentLargestNumbers([]));
-// //''
+//''
+
+module.exports = {
+  getTotal,
+  mostFrequentLargestNumbers,
+  sorting
+}
