@@ -12,20 +12,11 @@ function sorting(arrNumber) {
 }
 
 function getTotal(arrNumber) {
+    let arr = sorting(arrNumber)
     let count = 0
-    let largest = 0
-    for (var i = 0; i < arrNumber.length; i++) { // to find largest number
-        if (largest < arrNumber[i]) {
-            largest = arrNumber[i]
-        }
-    }
-
-    for (var j = 0; j < arrNumber.length; j++) { // to find the occurence of highest number
-        if (arrNumber[j] === largest) {
-            count += 1
-        }
-    }
-    return `angka paling besar adalah ${largest} dan jumlah kemunculan sebanyak ${count} kali`
+ 
+    console.log(arr)
+    //return `angka paling besar adalah ${largest} dan jumlah kemunculan sebanyak ${count} kali`
 }
 
 function mostFrequentLargestNumbers(arrNumber) {
