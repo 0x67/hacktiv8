@@ -1,6 +1,7 @@
 function groupAnimals(animals) {
     //get the first letters for every array index
     var firstLetterArr = []
+
     for (var i = 0; i < animals.length; i++) {
         var firstLetter = true
         for (var j = 0; j < firstLetterArr.length; j++) {
@@ -12,12 +13,26 @@ function groupAnimals(animals) {
             firstLetterArr.push(animals[i][0])
         }
     }
+    
+    //sort the first letter
+    let kamus = 'abcdefghijklmnopqrstuvwxyz'
+    let sortedArr = []
 
+    for (let i = 0; i < kamus.length; i++) {
+        for (let j = 0; j < firstLetterArr.length; j++) {
+            if (firstLetterArr[j] === kamus[i]) {
+                sortedArr.push(kamus[i])
+            }
+        }
+    }
+
+    // push every animals[i][0] that match with firstLetterArr to new array
     let output = []
-    for(let i = 0; i < firstLetterArr.length; i++) {
+    
+    for(let i = 0; i < sortedArr.length; i++) {
         let innerArr = []
         for(let j = 0; j < animals.length; j++) {
-            if(animals[j][0] === firstLetterArr[i]) {
+            if(animals[j][0] === sortedArr[i]) {
                 innerArr.push(animals[j])
             }
         }
