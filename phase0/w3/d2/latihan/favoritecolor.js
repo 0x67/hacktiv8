@@ -44,8 +44,14 @@ function favoriteColor(input) {
   }
 }
 
-console.log(favoriteColor(['red', 'red', 'yellow'])); // "red the most favorite!"
-console.log(favoriteColor(['blue', 'red', 'yellow', 'blue'])); // "blue the most favorite!"
-console.log(favoriteColor(['yellow', 'yellow', 'yellow'])); // "yellow the most favorite!"
-console.log(favoriteColor(['red'])); // "red the most favorite!"
-console.log(favoriteColor([])); // "There are no favorite!"
+// console.log(favoriteColor(['red', 'red', 'yellow'])); // "red the most favorite!"
+// console.log(favoriteColor(['blue', 'red', 'yellow', 'blue'])); // "blue the most favorite!"
+// console.log(favoriteColor(['yellow', 'yellow', 'yellow'])); // "yellow the most favorite!"
+// console.log(favoriteColor(['red'])); // "red the most favorite!"
+// console.log(favoriteColor([])); // "There are no favorite!"
+
+console.log(favoriteColor([10, 4, 5, 2, 4]))
+console.log(favoriteColor([5, 10, 10, 6, 5])); // 5
+console.log(favoriteColor([10, 3, 1, 2, 5])); // -1
+console.log(favoriteColor([1, 2, 3, 3, 4, 5])); // 3
+console.log(favoriteColor([7, 7, 7, 7, 7])); // -1
